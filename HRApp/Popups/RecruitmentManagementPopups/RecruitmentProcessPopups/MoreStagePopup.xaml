@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="HRApp.Popups.RecruitmentManagementPopups.RecruitmentProcessPopups.MoreStagePopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HRApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
+    <Grid Height="560" Width="736" Background="#ffffff">
+        <Grid Height="36" VerticalAlignment="Top" Background="#4C5BD4">
+            <TextBlock Text="THÊM GIAI ĐOẠN" Foreground="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+        </Grid>
+        <Grid Height="36" Width="624" Margin="56,84,56,440">
+            <Grid Height="16" Width="94" HorizontalAlignment="Left" Margin="0,11,0,9">
+                <TextBlock Text="Tên giai đoạn" FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="84" HorizontalAlignment="Left"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="5,0,0,0" Width="5" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Grid Width="404" HorizontalAlignment="Right" Grid.Column="1">
+                <Border CornerRadius="4" BorderBrush="#4C5BD4" BorderThickness="1"></Border>
+            </Grid>
+        </Grid>
+
+        <Grid Height="36" Width="624" Margin="56,140,56,384">
+            <Grid Height="16" Width="190" HorizontalAlignment="Left" Margin="0,11,434,9">
+                <TextBlock Text="Bộ phận đảm nhận công việc" Foreground="#474747" FontSize="14" FontFamily="Roboto" Width="185" HorizontalAlignment="Left"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="5,0,0,0" Width="5" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Grid Width="404" HorizontalAlignment="Right">
+                <Border CornerRadius="4" BorderBrush="#474747" BorderThickness="1"></Border>
+            </Grid>
+        </Grid>
+
+        <Grid Height="36" Width="624" Margin="56,196,56,328">
+            <Grid Height="16" Width="64" HorizontalAlignment="Left" Margin="0,11,560,9">
+                <TextBlock Text="Mục tiêu" FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="64" HorizontalAlignment="Left"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="5,0,0,0" Width="5" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Grid Width="404" HorizontalAlignment="Right">
+                <Border CornerRadius="4" BorderBrush="#474747" BorderThickness="1"></Border>
+            </Grid>
+        </Grid>
+
+        <Grid Height="36" Width="624" Margin="56,252,56,272">
+            <Grid Height="16" Width="128" HorizontalAlignment="Left" Margin="0,11,496,9">
+                <TextBlock Text="Thời gian định lượng" FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="128" HorizontalAlignment="Left"></TextBlock>
+            </Grid>
+            <Grid Width="404" HorizontalAlignment="Right">
+                <Border CornerRadius="4" BorderBrush="#474747" BorderThickness="1"></Border>
+            </Grid>
+        </Grid>
+        <Grid Height="125" Width="624" HorizontalAlignment="Center" Margin="56,319,56,116">
+            <TextBlock Text="Mô tả công việc" HorizontalAlignment="Left" VerticalAlignment="Top" Height="16" Width="99" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+            <Border Height="92" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"></Border>
+        </Grid>
+        <Border Height="36" Width="100" CornerRadius="8"  Background="#BDBDBD" Margin="464,468,172,56">
+            <TextBlock Text="Hủy" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+        <Border Height="36" Width="100" CornerRadius="8" Background="#27AE60" Margin="580,468,56,56">
+            <TextBlock Text="Thêm" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+    </Grid>
+</UserControl>

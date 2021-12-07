@@ -1,0 +1,394 @@
+﻿<Page x:Class="HRApp.Pages.RecentDeletedData.DeleteData2Page"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1108"
+      Title="DeleteData2">
+
+    <Page.Resources>
+        <DropShadowEffect x:Key="z-depth1" BlurRadius="10" ShadowDepth="3" Direction="270" Color="#CCCCCC" />
+    </Page.Resources>
+    <Grid Background="#FAFAFA">
+        <Grid Height="1" Background="{StaticResource #474747}" Margin="0,77,0,0" VerticalAlignment="Top"></Grid>
+        <Grid Height="77" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" ></ColumnDefinition>
+                <ColumnDefinition Width="Auto" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <TextBlock Cursor="Hand" FontWeight="SemiBold" Margin="0,0,0,29" VerticalAlignment="Bottom" Text="DỮ LIỆU ĐÃ XÓA GẦN ĐÂY" FontSize="14" Foreground="{StaticResource #474747}"/>
+            </Grid>
+        </Grid>
+        <Grid Height="77" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" MinWidth="172"></ColumnDefinition>
+                <ColumnDefinition Width="Auto" MinWidth="171"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid Width="400" Height="36" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,0,0">
+                    <Border BorderBrush="#474747" BorderThickness="1" CornerRadius="15">
+                        <TextBlock Text="Tìm kiếm" Foreground="#666666" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="13,0,0,0" FontFamily="Roboto"></TextBlock>
+                    </Border>
+                    <Path Width="20" Height="20" Fill="#666666" Data="{StaticResource icon_search}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,8,14,0"></Path>
+                </Grid>
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Height="13"  Margin="0,0,450,0">
+                    <Path Data="{StaticResource list}" Fill="#666666"></Path>
+                </Grid>
+                <Grid Height="36" Width="1"  VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,420,0" Background="#474747"></Grid>
+            </Grid>
+        </Grid>
+        <Grid  Margin="0,153,0,0">
+            <Border CornerRadius="8" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}">
+                <Grid>
+                    <Grid Height="36" VerticalAlignment="Top">
+                        <Border CornerRadius="8,8,0,0" Background="{StaticResource #4C5BD4}"></Border>
+                    </Grid>
+                    <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+                        <Grid>
+                            <Grid Height="36" VerticalAlignment="Top">
+                                <Border CornerRadius="8,8,0,0">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="346"></ColumnDefinition>
+                                            <ColumnDefinition Width="298"></ColumnDefinition>
+                                            <ColumnDefinition Width="170"></ColumnDefinition>
+                                            <ColumnDefinition Width="174"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0">
+                                            <TextBlock Text="Tên" FontSize="16" Foreground="{StaticResource #FFFFFF}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                        </Grid>
+                                        <Grid Grid.Column="1">
+                                            <TextBlock Text="Thời gian" FontSize="16" Foreground="{StaticResource #FFFFFF}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                        </Grid>
+                                        <Grid Grid.Column="2">
+                                            <TextBlock Text="Kích thước" FontSize="16" Foreground="{StaticResource #FFFFFF}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                        </Grid>
+                                        <Grid Grid.Column="3">
+                                            <TextBlock Text="Chọn" FontSize="16" Foreground="{StaticResource #FFFFFF}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                        </Grid>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                            <Grid Margin="0,36,0,0">
+                                <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled">
+                                    <StackPanel Orientation="Vertical">
+
+                                        <Grid Height="96">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                                <ColumnDefinition Width="322"></ColumnDefinition>
+                                                <ColumnDefinition Width="182"></ColumnDefinition>
+                                                <ColumnDefinition Width="186"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <Grid Margin="0,20,0,0">
+                                                    <TextBlock Text="Hôm nay" FontSize="16" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBlock>
+                                                    <Path Data="{StaticResource dropdown}" Fill="{StaticResource #4C5BD4}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Height="10"></Path>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="1">
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0" >
+                                                        <TextBlock Text="Quy định 1" FontSize="14" Foreground="{StaticResource #474747}"  HorizontalAlignment="Right" ></TextBlock>
+                                                        <Path Data="{StaticResource folder}" Fill="{StaticResource #474747}" HorizontalAlignment="Left"></Path>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <TextBlock Text="27/05/2021" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" >
+                                                        <TextBlock Text="150GB" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="4">
+                                                <Grid Margin="0,22,0,0" VerticalAlignment="Top">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                        <TextBlock Text="Tất cả" Foreground="#C4C4C4" HorizontalAlignment="Right" Margin="0,0,5,0"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Rectangle Grid.ColumnSpan="14" Height="0.5" StrokeDashArray="2,4" StrokeThickness="0.5" Stroke="{StaticResource #CCCCCC}" VerticalAlignment="Bottom"></Rectangle>
+                                        </Grid>
+                                        <Grid Height="54">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                                <ColumnDefinition Width="322"></ColumnDefinition>
+                                                <ColumnDefinition Width="182"></ColumnDefinition>
+                                                <ColumnDefinition Width="186"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+
+                                            </Grid>
+                                            <Grid Grid.Column="1">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0" >
+                                                        <TextBlock Text="Quy định 1" FontSize="14" Foreground="{StaticResource #474747}"  HorizontalAlignment="Right" ></TextBlock>
+                                                        <Path Data="{StaticResource folder}" Fill="{StaticResource #474747}" HorizontalAlignment="Left"></Path>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <TextBlock Text="27/05/2021" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" >
+                                                        <TextBlock Text="150GB" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="4">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Rectangle Grid.ColumnSpan="14" Height="0.5" StrokeDashArray="2,4" StrokeThickness="0.5" Stroke="{StaticResource #CCCCCC}" VerticalAlignment="Bottom"></Rectangle>
+                                        </Grid>
+                                        <Grid Height="54">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                                <ColumnDefinition Width="322"></ColumnDefinition>
+                                                <ColumnDefinition Width="182"></ColumnDefinition>
+                                                <ColumnDefinition Width="186"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+
+                                            </Grid>
+                                            <Grid Grid.Column="1">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0" >
+                                                        <TextBlock Text="Quy định 1" FontSize="14" Foreground="{StaticResource #474747}"  HorizontalAlignment="Right" ></TextBlock>
+                                                        <Path Data="{StaticResource folder}" Fill="{StaticResource #474747}" HorizontalAlignment="Left"></Path>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <TextBlock Text="27/05/2021" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" >
+                                                        <TextBlock Text="150GB" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="4">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Rectangle Grid.ColumnSpan="14" Height="0.5"  StrokeThickness="0.5" Stroke="{StaticResource #CCCCCC}" VerticalAlignment="Bottom"></Rectangle>
+                                        </Grid>
+
+                                        <Grid Height="96">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                                <ColumnDefinition Width="322"></ColumnDefinition>
+                                                <ColumnDefinition Width="182"></ColumnDefinition>
+                                                <ColumnDefinition Width="186"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <Grid Margin="0,20,0,0">
+                                                    <TextBlock Text="11/06/2021" FontSize="16" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBlock>
+                                                    <Path Data="{StaticResource dropdownTop}" Fill="{StaticResource #4C5BD4}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Height="10"></Path>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="1">
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0" >
+                                                        <TextBlock Text="Quy định 1" FontSize="14" Foreground="{StaticResource #474747}"  HorizontalAlignment="Right" ></TextBlock>
+                                                        <Path Data="{StaticResource file}" Fill="#FFCC6C" HorizontalAlignment="Left"></Path>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <TextBlock Text="27/05/2021" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" >
+                                                        <TextBlock Text="150GB" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="4">
+                                                <Grid Margin="0,40,0,0">
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Rectangle Grid.ColumnSpan="14" Height="0.5" StrokeDashArray="2,4" StrokeThickness="0.5" Stroke="{StaticResource #CCCCCC}" VerticalAlignment="Bottom"></Rectangle>
+                                        </Grid>
+                                        <Grid Height="56">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                                <ColumnDefinition Width="322"></ColumnDefinition>
+                                                <ColumnDefinition Width="182"></ColumnDefinition>
+                                                <ColumnDefinition Width="186"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+
+                                            </Grid>
+                                            <Grid Grid.Column="1">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0" >
+                                                        <TextBlock Text="Quy định 1" FontSize="14" Foreground="{StaticResource #474747}"  HorizontalAlignment="Right" ></TextBlock>
+                                                        <Path Data="{StaticResource file}" Fill="#FFCC6C" HorizontalAlignment="Left"></Path>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <TextBlock Text="27/05/2021" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" >
+                                                        <TextBlock Text="150GB" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="4">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Rectangle Grid.ColumnSpan="14" Height="0.5"  StrokeThickness="0.5" Stroke="{StaticResource #CCCCCC}" VerticalAlignment="Bottom"></Rectangle>
+                                        </Grid>
+                                        <Grid Height="56">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                                <ColumnDefinition Width="322"></ColumnDefinition>
+                                                <ColumnDefinition Width="182"></ColumnDefinition>
+                                                <ColumnDefinition Width="186"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+
+                                            </Grid>
+                                            <Grid Grid.Column="1">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0" >
+                                                        <TextBlock Text="Quy định 1" FontSize="14" Foreground="{StaticResource #474747}"  HorizontalAlignment="Right" ></TextBlock>
+                                                        <Path Data="{StaticResource file}" Fill="#FFCC6C" HorizontalAlignment="Left"></Path>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <TextBlock Text="27/05/2021" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" >
+                                                        <TextBlock Text="150GB" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="4">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Rectangle Grid.ColumnSpan="14" Height="0.5"  StrokeThickness="0.5" Stroke="{StaticResource #CCCCCC}" VerticalAlignment="Bottom"></Rectangle>
+                                        </Grid>
+                                        <Grid Height="56">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                                <ColumnDefinition Width="322"></ColumnDefinition>
+                                                <ColumnDefinition Width="182"></ColumnDefinition>
+                                                <ColumnDefinition Width="186"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+
+                                            </Grid>
+                                            <Grid Grid.Column="1">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0" >
+                                                        <TextBlock Text="Quy định 1" FontSize="14" Foreground="{StaticResource #474747}"  HorizontalAlignment="Right" ></TextBlock>
+                                                        <Path Data="{StaticResource file}" Fill="#FFCC6C" HorizontalAlignment="Left"></Path>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <TextBlock Text="27/05/2021" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" >
+                                                        <TextBlock Text="150GB" VerticalAlignment="Bottom" Width="75" Height="16" FontSize="14" Foreground="#929292" FontFamily="Roboto"></TextBlock>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid Grid.Column="4">
+                                                <Grid>
+                                                    <Grid Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" >
+                                                        <CheckBox Height="16" Width="16" ></CheckBox>
+                                                    </Grid>
+                                                </Grid>
+                                            </Grid>
+                                            <Rectangle Grid.ColumnSpan="14" Height="0.5"  StrokeThickness="0.5" Stroke="{StaticResource #CCCCCC}" VerticalAlignment="Bottom"></Rectangle>
+                                        </Grid>
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </Grid>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

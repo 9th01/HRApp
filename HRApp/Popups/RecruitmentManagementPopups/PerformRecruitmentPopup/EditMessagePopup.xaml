@@ -1,0 +1,306 @@
+﻿<UserControl x:Class="HRApp.Popups.RecruitmentManagementPopups.PerformRecruitmentPopup.EditMessagePopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HRApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="3000" d:DesignWidth="1000">
+    <Grid  Width="736" Height="2712" Background="#ffffff">
+        <Grid Height="36" VerticalAlignment="Top" Background="#4C5BD4">
+            <TextBlock Text="CHỈNH SỬA TIN" Foreground="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+        </Grid>
+        <Grid Height="69" Width="624" VerticalAlignment="Center" Margin="0,95,0,2548">
+            <TextBlock Text="Tiêu đề tin tuyển dụng" Width="142" Height="16" FontSize="14" Foreground="#474747" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="145,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text="(TD001)TRỢ LÝ KINH DOANH" FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Center" Margin="20,0,0,0"></TextBlock>
+            </Border>
+        </Grid>
+        <Grid Width="288" Height="69" HorizontalAlignment="Left" Margin="56,179,392,2464">
+            <TextBlock Text="Vị trí tuyển dụng" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="105,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="Thực tập sinh" Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <Grid Width="288" Height="69" HorizontalAlignment="Right" Margin="392,179,56,2464">
+            <TextBlock Text="Địa điểm làm việc" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="110,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="Hà Nội" Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,263,0,2380">
+            <TextBlock Text="Địa chỉ tuyển dụng" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text='b50,lô 6,Khu Công Nghiệp Định Công,Hoàng Mai,Hà Nội'  FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Center" Margin="20,0,0,0"></TextBlock>
+            </Border>
+        </Grid>
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,347,0,2296">
+            <TextBlock Text="Nghành nghề" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text="An toàn lao động" Height="16" Margin="20,10,491,8" FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Center" />
+            </Border>
+            <Grid Margin="597,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,431,0,2212">
+            <TextBlock Text="Chi tiết công việc" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text="Trợ lý kinh doanh" Height="16" Margin="20,10,491,8" FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Center" />
+            </Border>
+        </Grid>
+
+        <Grid Width="288" Height="69" HorizontalAlignment="Left" Margin="56,515,392,2128">
+            <TextBlock Text="Hình thức làm việc" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="115,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="Bán thời gian cố định" Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <Grid Width="288" Height="69" HorizontalAlignment="Right" Margin="392,515,56,2128">
+            <TextBlock Text="Mức lương" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="70,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="3-5 triệu" Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+
+
+        <Grid Width="288" Height="69" HorizontalAlignment="Left" Margin="56,599,392,2044">
+            <TextBlock Text="Hoa hồng (nếu có)" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <Grid Width="288" Height="69" HorizontalAlignment="Right" Margin="392,599,56,2044">
+            <TextBlock Text="Thời gian thử việc" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="6 ngày" Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+
+        <Grid Width="152" Height="69" Margin="56,683,528,1960">
+            <TextBlock Text="Số lượng tuyển"  FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="95,0,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="152" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0" HorizontalAlignment="Left">
+                <TextBlock Text="2" Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+        </Grid>
+        <Grid Width="400" Height="69" Margin="280,683,56,1960">
+            <TextBlock Text="Thời hạn tuyển" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="95,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="152" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0" HorizontalAlignment="Left">
+                <TextBlock Text="15/04/2020" Margin="20,11,59,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"/>
+            </Border>
+            <Grid Margin="124,43,260,10" Height="16" Width="16">
+                <Path Data="{StaticResource calendar}"  Fill="#474747"/>
+            </Grid>
+            <TextBlock Text="đến" Width="24" Height="16" Margin="186,0,190,0" VerticalAlignment="Center" FontSize="14" Foreground="#474747"></TextBlock>
+            <Border Height="36" Width="152" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="248,33,0,0" HorizontalAlignment="Left">
+                <TextBlock Text="15/05/2020" Height="16" Margin="20,11,58,7" Foreground="#474747" FontSize="14" FontFamily="Roboto"/>
+            </Border>
+            <Grid Margin="376,44,8,9" Height="16" Width="16">
+                <Path Data="{StaticResource calendar}"  Fill="#474747"/>
+            </Grid>
+        </Grid>
+        <Grid Width="624" Height="113" VerticalAlignment="Center" Margin="0,767,0,1832">
+            <TextBlock Text="Mô tả công việc"  FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="100,0,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="80" Width="624" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <TextBlock Text="Trợ lý kinh doanh  " Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            </Border>
+        </Grid>
+
+        <Grid Width="624" Height="113" VerticalAlignment="Center" Margin="0,895,0,1704">
+            <TextBlock Text="Quyền lợi"  FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="60,0,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="80" Width="624" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <TextBlock Text="Được đào tạo thêm " Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            </Border>
+        </Grid>
+
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,1029,0,1614">
+            <TextBlock Text="Mã quy trình tuyển dụng áp đụng" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text="QTĐ005" Width="107" Height="16" Margin="20,11,497,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="597,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <TextBlock Text="Yêu cầu công việc" Margin="56,1126,556,1570" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto" FontWeight="DemiBold" ></TextBlock>
+        <TextBlock Text=" *" Foreground="red" Margin="170,1126,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+
+        <Grid Width="288" Height="69" HorizontalAlignment="Left" Margin="56,1166,392,1477">
+            <TextBlock Text="Kinh nghiệm" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="80,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="Không yêu cầu kinh nghiệm" Height="16" Margin="20,11,92,7" Foreground="#474747" FontSize="14" FontFamily="Roboto"/>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <Grid Width="288" Height="69" HorizontalAlignment="Right" Margin="392,1166,56,1477">
+            <TextBlock Text="Yêu cầu bằng cấp" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="110,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="Đại học" Width="107" Height="16" Margin="20,11,161,9" Foreground="#474747" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+        <Grid Width="288" Height="69" HorizontalAlignment="Left" Margin="56,1250,392,1393">
+            <TextBlock Text="Yêu cầu giới tính" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text="*" Foreground="red" Margin="105,0,0,0" Width="5"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="36" Width="288" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" Margin="0,33,0,0">
+                <TextBlock Text="--Vui lòng chọn--" Width="165" Height="16" Margin="20,11,103,9" Foreground="#ced1d6" FontSize="14" FontFamily="Roboto"></TextBlock>
+            </Border>
+            <Grid Margin="262,49,14,8">
+                <Path Data="{StaticResource dropdown}"  Fill="#eeeeee"/>
+            </Grid>
+        </Grid>
+
+
+        <Grid Width="624" Height="113" VerticalAlignment="Center" Margin="0,1334,0,1265">
+            <TextBlock Text="Yêu cầu công việc"  FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="108,0,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="80" Width="624" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <TextBlock Text="Không có yêu cầu " Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            </Border>
+        </Grid>
+
+        <Grid Width="624" Height="113" VerticalAlignment="Center" Margin="0,1462,0,1137">
+            <TextBlock Text="Yêu cầu hồ sơ"  FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="90,0,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="80" Width="624" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <TextBlock Text="Sơ yếu lý lịch " Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            </Border>
+        </Grid>
+        <TextBlock Text="Thành viên theo dõi" Width="122" Height="16" Margin="56,1590,558,1106" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+        <Border Height="36" Width="624" Margin="56,0,0,1053" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <Grid>
+                <Border Background="#FBFBFB" HorizontalAlignment="Left" Width="160" Height="28" CornerRadius="8">
+                    <TextBlock Text="Nguyễn Văn A" Width="88" Height="16" Margin="12,5,5,0" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                </Border>
+                <Grid Height="12" Margin="142,11,468,11" >
+                    <Path Data="{StaticResource deleteBlack}" Fill="#474747" ></Path>
+                </Grid>
+                <Border Background="#FBFBFB" Margin="165,3,296,3" Height="28" CornerRadius="8">
+                    <TextBlock Text="Nguyễn Văn B" Width="88" Height="16" Margin="12,5,5,0" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                </Border>
+                <Grid Height="12" Margin="305,10,305,10" >
+                    <Path Data="{StaticResource deleteBlack}" Fill="#474747" ></Path>
+                </Grid>
+            </Grid>
+
+        </Border>
+        <TextBlock Text="Tên nhân viên phụ trách tuyển dụng" Height="16" Margin="56,1674,457,1022" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"/>
+        <Border Height="36" Width="624" Margin="56,1707,0,969" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <Grid>
+                <Border Background="#FBFBFB" HorizontalAlignment="Left" Width="160" Height="28" CornerRadius="8">
+                    <TextBlock Text="Nguyễn Văn A" Width="88" Height="16" Margin="12,5,5,0" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                </Border>
+                <Grid Height="12" Margin="142,11,468,11" >
+                    <Path Data="{StaticResource deleteBlack}" Fill="#474747" ></Path>
+                </Grid>
+                <Border Background="#FBFBFB" Margin="165,3,296,3" Height="28" CornerRadius="8">
+                    <TextBlock Text="Nguyễn Văn B" Width="88" Height="16" Margin="12,5,5,0" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                </Border>
+                <Grid Height="12" Margin="305,10,305,10" >
+                    <Path Data="{StaticResource deleteBlack}" Fill="#474747" ></Path>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <TextBlock Text="Thông tin liên hệ" Margin="56,1771,564,925" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto" FontWeight="DemiBold"></TextBlock>
+        <TextBlock Text=" *" Foreground="red" Margin="165,1771,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+        <!--<Border Height="80" Width="624" CornerRadius="4" BorderBrush="#474747" BorderThickness="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom"></Border>-->
+
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,1811,0,832">
+            <TextBlock Text="Tên người liên hệ" Height="16" VerticalAlignment="Top" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="105,0,0,0"  Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text="Nguyễn Văn A" Width="165" Height="16" Margin="20,11,103,9" Foreground="#474747" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            </Border>
+        </Grid>
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,1895,0,748">
+            <TextBlock Text="Địa chỉ liên hệ" Height="16" VerticalAlignment="Top" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="85,0,0,0"  Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text='b50,lô 6,Khu Công Nghiệp Định Công,Hoàng Mai,Hà Nội'  FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Center" Margin="20,0,0,0"></TextBlock>
+            </Border>
+        </Grid>
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,1992,0,651">
+            <TextBlock Text="Số điện thoại liên hệ" Height="16" VerticalAlignment="Top" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="125,0,0,0"  Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text='012301230123'  FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Center" Margin="20,0,0,0"></TextBlock>
+            </Border>
+        </Grid>
+        <Grid Width="624" Height="69" VerticalAlignment="Center" Margin="0,2089,0,554">
+            <TextBlock Text="Email liên hệ" Height="16" VerticalAlignment="Top" FontSize="14" Foreground=" #474747" FontStyle="Normal" FontFamily="Roboto"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="80,0,0,0"  Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Width="624" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                <TextBlock Text='Daylanguoihe@gmail.com'  FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Center" Margin="20,0,0,0"></TextBlock>
+            </Border>
+        </Grid>
+
+        <TextBlock Text="Lĩnh vực hoạt động" Margin="56,2186,551,510" Foreground="#474747" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+        <TextBlock Text=" *" Foreground="red" Margin="175,2186,551,510" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+        <Border Height="80" Width="624" Margin="56,2219,56,413" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" >
+            <TextBlock Text='Bảo vệ,an ninh an toàni'  FontSize="14" FontFamily="Roboto" FontStyle="Normal" VerticalAlignment="Top" Margin="20,0,0,0"></TextBlock>
+        </Border>
+
+
+        <Grid Width="624" Height="182" VerticalAlignment="Center" Margin="0,2314,0,216">
+            <TextBlock Text="Giới thiệu công ty"  Foreground="#474747" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+            <TextBlock Text=" *" Foreground="red" Margin="110,0,0,0" Width="8"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+            <Border Height="149" Width="624" Margin="0,33,0,0" CornerRadius="4" BorderBrush="#474747" BorderThickness="1" >
+                <Grid Width="406" Height="128" Margin="20,10,198,11">
+                    <TextBlock Text="Lưu ý:Số từ phải lớn hơn 100 từ" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                    <TextBlock Text="1.Giới thiệu chung về công ty" Margin="20,15,0,0" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                    <TextBlock Text="2.Đặc điểm về nhân lực" Margin="20,30,0,0" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                    <TextBlock Text="3.Nhu cầu tuyển dụng nhân sự" Margin="20,45,0,0" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                    <TextBlock Text="4.Các vị trí thường xuyên tuyển dụng" Margin="20,60,0,0" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                    <TextBlock Text="5.Quy trình tuyển dụng"  Margin="20,75,0,0" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                    <TextBlock Text="6.Quyền lợi làm việc của người lao động tại công ty" Margin="20,90,0,0" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                    <TextBlock Text="7.Viết tối ưu nội dung,không sửa trong phần tên công ty" Margin="20,105,0,0" Foreground="#dbd8ce" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+                </Grid>
+            </Border>
+
+        </Grid>
+        <TextBlock Text="Tin tuyển dụng của bạn sẽ được đăng trên:" Height="16" Margin="56, 2516,415,180" Foreground="#4C5BD4"  FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+        <CheckBox Height="20" Width="20" Margin="59, 2547,657,145"></CheckBox>
+        <TextBlock Text="Website Timviec365.vn" Margin="89,2549,502,147" Foreground="#474747" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+        <CheckBox Height="20" Width="20" Margin="59, 2582,657,110"></CheckBox>
+        <TextBlock Text="Facebook" Margin="89,2584,586,112" Foreground="#474747" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+        <Border Height="36" Width="100" CornerRadius="8"  Background="#BDBDBD" Margin="464,2611,172,65">
+            <TextBlock Text="Hủy" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+        <Border Height="36" Width="100" CornerRadius="8" Background="#27AE60" Margin="580,2611,56,65">
+            <TextBlock Text="Cập nhập" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+    </Grid>
+</UserControl>

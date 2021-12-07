@@ -1,0 +1,676 @@
+﻿<Page x:Class="HRApp.Pages.HRReportPages.HRReportPages.HRReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+      x:Name="Page"
+      SizeChanged="Page_SizeChanged"
+      xmlns:toolTip="clr-namespace:HRApp.Pages.HRReportPages.HRReportPages.Charts"
+      d:DesignHeight="6000" d:DesignWidth="1108"
+      Title="ProfilePage">
+    <Page.Resources>
+        <DropShadowEffect x:Key="z-depth1" BlurRadius="5" ShadowDepth="1" Color="#CCCCCC" />
+    </Page.Resources>
+    <Grid Margin="0,43,0,0">
+        <Grid>
+            <Grid Height="1" VerticalAlignment="Top" Margin="0,30,0,0" Background="{StaticResource #474747}"></Grid>
+            <Grid VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock FontWeight="SemiBold" Cursor="Hand" Grid.Column="0" Text="BÁO CÁO NHÂN SỰ" FontSize="14" Foreground="{StaticResource #4C5BD4}" Margin="35,0,35,13" ></TextBlock>
+                    <Grid Height="4" VerticalAlignment="Bottom">
+                        <Border CornerRadius="8,8,0,0" Background="{StaticResource #4C5BD4}"></Border>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBlock FontWeight="SemiBold" Grid.Column="1" Text="BÁO CÁO TUYỂN DỤNG" FontSize="14" Foreground="{StaticResource #474747}" Margin="35,0,35,13"></TextBlock>
+                </Grid>
+            </Grid>
+            <Grid Margin="0,54,0,0">
+                <Grid Height="36" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Border CornerRadius="4" Background="{StaticResource #FFFFFF}" BorderThickness="0.5" BorderBrush="{StaticResource #474747}" Opacity="0.24"></Border>
+                        <TextBox Text="Phòng ban" Padding="20,0,0,0" BorderThickness="0" Background="{x:Null}" Foreground="{StaticResource #666666}" VerticalAlignment="Center" FontSize="14" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                        <Path Data="{StaticResource icon_explandmore}" Fill="{StaticResource #474747}" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" Opacity="0.24"></Path>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Border CornerRadius="4" Background="{StaticResource #FFFFFF}" BorderThickness="0.5" BorderBrush="{StaticResource #474747}" Opacity="0.24"></Border>
+                        <TextBox Text="Tổ" Padding="20,0,0,0" BorderThickness="0" Background="{x:Null}" Foreground="{StaticResource #666666}" VerticalAlignment="Center" FontSize="14" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                        <Path Data="{StaticResource icon_explandmore}" Fill="{StaticResource #474747}" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" Opacity="0.24"></Path>
+                    </Grid>
+                    <Grid Grid.Column="4">
+                        <Border CornerRadius="4" Background="{StaticResource #FFFFFF}" BorderThickness="0.5" BorderBrush="{StaticResource #474747}" Opacity="0.24"></Border>
+                        <TextBox Text="Nhóm" Padding="20,0,0,0" BorderThickness="0" Background="{x:Null}" Foreground="{StaticResource #666666}" VerticalAlignment="Center" FontSize="14" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                        <Path Data="{StaticResource icon_explandmore}" Fill="{StaticResource #474747}" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" Opacity="0.24"></Path>
+                    </Grid>
+                </Grid>
+                <Grid Height="36" VerticalAlignment="Top" Margin="0,56,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Margin="0,0,20,0">
+                        <Border CornerRadius="4" Background="{StaticResource #FFFFFF}" BorderThickness="0.5" BorderBrush="{StaticResource #474747}" Opacity="0.24"></Border>
+                        <TextBox Text="Lựa chọn thời gian" Padding="20,0,0,0" BorderThickness="0" Background="{x:Null}" Foreground="{StaticResource #666666}" VerticalAlignment="Center" FontSize="14" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                        <Path Data="{StaticResource icon_explandmore}" Fill="{StaticResource #474747}" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" Opacity="0.24"></Path>
+                    </Grid>
+                    <Grid Grid.Column="1" Margin="0,0,20,0">
+                        <Border CornerRadius="4" Background="{StaticResource #FFFFFF}" BorderThickness="0.5" BorderBrush="{StaticResource #474747}" Opacity="0.24"></Border>
+                        <TextBox Text="Từ: mm/yy" Padding="20,0,0,0" BorderThickness="0" Background="{x:Null}" Foreground="{StaticResource #666666}" VerticalAlignment="Center" FontSize="14" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                        <Path Data="{StaticResource icon_explandmore}" Fill="{StaticResource #474747}" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" Opacity="0.24"></Path>
+                    </Grid>
+                    <Grid Grid.Column="2" Margin="0,0,20,0">
+                        <Border CornerRadius="4" Background="{StaticResource #FFFFFF}" BorderThickness="0.5" BorderBrush="{StaticResource #474747}" Opacity="0.24"></Border>
+                        <TextBox Text="Đến: mm/yy" Padding="20,0,0,0" BorderThickness="0" Background="{x:Null}" Foreground="{StaticResource #666666}" VerticalAlignment="Center" FontSize="14" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                        <Path Data="{StaticResource icon_explandmore}" Fill="{StaticResource #474747}" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" Opacity="0.24"></Path>
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <Grid Width="64" HorizontalAlignment="Right">
+                            <Border Cursor="Hand" CornerRadius="5" Background="{StaticResource #4C5BD4}"></Border>
+                            <Path Data="{StaticResource icon_search}" Fill="{StaticResource #FFFFFF}" VerticalAlignment="Center" HorizontalAlignment="Center"></Path>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <Grid Margin="-10,135,-10,0">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                        <Grid>
+                            <StackPanel>
+                                <WrapPanel Orientation="Horizontal">
+                                    <Grid MinWidth="{Binding Width1}" Height="172" Margin="10">
+                                        <Border Cursor="Hand" CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}" x:Name="NewStaff" MouseLeftButtonDown="NavigateToPage"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Nhân viên mới" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Total1}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="100" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="1" Margin="50,0,50,0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Man2}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Nam" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="60" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Woman2}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Nữ" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid MinWidth="{Binding Width1}" Height="172" Margin="10">
+                                        <Border CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Nhân viên nghỉ việc/giảm biên chế" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Total1}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="100" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="1" Margin="32,0,32,0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource ReducePayroll}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Giảm biên chế" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="60" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource QuitJob}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Nghỉ việc" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid MinWidth="{Binding Width1}" Height="172" Margin="10">
+                                        <Border CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Bổ nhiệm, quy hoạch" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Total2}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="30" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="1" Margin="50,0,50,0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Man2}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Nam" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="20" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Woman2}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Nữ" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="10" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid MinWidth="{Binding Width1}" Height="172" Margin="10">
+                                        <Border CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Tăng lương/giảm lương" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Total1}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="100" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="1" Margin="40,0,40,0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource UpSalary}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tăng lương" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="60" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource DownSalary}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Giảm lương" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid MinWidth="{Binding Width1}" Height="172" Margin="10">
+                                        <Border CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Luân chuyển công tác" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Total3}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="100" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="1" Margin="50,0,50,0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Man2}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Nam" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="60" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="2">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Woman2}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Nữ" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid MinWidth="{Binding Width1}" Height="172" Margin="10">
+                                        <Border CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Tình trạng hôn nhân" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource GetMarried}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Đã lập gia đình" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="30" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="1" Margin="59,0,0,0">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Single}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Độc thân" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="70" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid MinWidth="{Binding Width2}" Height="172" Margin="10">
+                                        <Border CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Thâm niên công tác" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="1">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Total1}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="30" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Down3Month}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Dưới 3 tháng" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="20" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="5">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource 3M1Y}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="3 tháng - 1 năm" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #3F964F}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="7">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource 1Y3Y}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="1 năm - 3 năm" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #FFA800}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="9">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource 1Y3Y}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="3 năm - 5 năm" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="11">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource 1Y3Y}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Trên 5 năm" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="20" FontSize="12" Foreground="{StaticResource #FFCCB5}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid MinWidth="{Binding Width2}" Height="172" Margin="10">
+                                        <Border CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                        <Grid Height="50" VerticalAlignment="Top" >
+                                            <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                            <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                            <TextBlock Text="Độ tuổi nhân viên" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Bottom" Height="122">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="1">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Total1}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="500" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="3">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Down30}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Dưới 30 tuổi" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="200" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="5">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource 30to44}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="30 tuổi- 44 tuổi" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #3F964F}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="7">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource 45to59}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="45-59 tuổi" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #FFA800}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Column="9">
+                                                <StackPanel>
+                                                    <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                        <ContentControl ContentTemplate="{StaticResource Up60}"></ContentControl>
+                                                    </Grid>
+                                                    <TextBlock Text="Trên 60 tuổi" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                    <TextBlock Text="0" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                </WrapPanel>
+                                <Grid Margin="10,10,10,0" Height="172">
+                                    <Border Grid.ColumnSpan="19" CornerRadius="0,8,8,8" Background="{StaticResource #FFFFFF}" Effect="{DynamicResource z-depth1}"></Border>
+                                    <Grid Height="50" VerticalAlignment="Top" >
+                                        <Border CornerRadius="0,8,0,0" Background="{StaticResource #F1F9FC}"></Border>
+                                        <Grid Width="5" HorizontalAlignment="Left" Background="{StaticResource #4C5BD4}"></Grid>
+                                        <TextBlock Text="Trình độ học vấn" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="19,14,0,0"></TextBlock>
+                                    </Grid>
+                                    <Grid Margin="0,50,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="1">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource Total1}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Tổng số" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="500" FontSize="12" Foreground="{StaticResource #4C5BD4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="3">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource UpUniversity}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Trên đại học" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="20" FontSize="12" Foreground="{StaticResource #4CD4B4}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="5">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource University}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Đại học" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #3F964F}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="7">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource College}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Cao đẳng" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #FFA800}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="9">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource College}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Trung cấp" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #D44C4C}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="11">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource College}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Đào tạo nghề" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #FFCCB5}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="13">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource HighSchool}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Trung học phổ thông" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #666666}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="15">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource Secondary}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Trung học cơ sở" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #31BFFE}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Grid Grid.Column="17">
+                                            <StackPanel>
+                                                <Grid Height="30" Width="30" Margin="0,20,0,0">
+                                                    <ContentControl ContentTemplate="{StaticResource Primary}"></ContentControl>
+                                                </Grid>
+                                                <TextBlock Text="Tiểu học" FontSize="12" Foreground="{StaticResource #474747}" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                                                <TextBlock Text="40" FontSize="12" Foreground="{StaticResource #EB5757}" HorizontalAlignment="Center" Margin="0,7,0,0"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê số nhân viên mới" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:NewStaffChart></toolTip:NewStaffChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê nhân viên nghỉ việc/ giảm biên chế" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:QuitJobChart></toolTip:QuitJobChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê bổ nhiệm, quy hoạch" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:NewStaffChart></toolTip:NewStaffChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê tăng/ giảm lương" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:NewStaffChart></toolTip:NewStaffChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ luân chuyển công tác" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:NewStaffChart></toolTip:NewStaffChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê tình trạng hôn nhân" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:StackColumnChart></toolTip:StackColumnChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê trình độ học vấn" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:AcademiLevelChart></toolTip:AcademiLevelChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê thâm niên công tác" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:WorkingSeniorityChart></toolTip:WorkingSeniorityChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="464" Margin="10,20,10,0">
+                                    <Border Background="{StaticResource #FFFFFF}" CornerRadius="8" Effect="{DynamicResource z-depth1}" BorderThickness="0.5" BorderBrush="{StaticResource #CCCCCC}"></Border>
+                                    <TextBlock Text="Biểu đồ thống kê độ tuổi" FontSize="16" FontWeight="SemiBold" Foreground="{StaticResource #666666}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0"></TextBlock>
+                                    <TextBlock Text="01/2021 - 12/2021" FontSize="14" Foreground="{StaticResource #4C5BD4}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,69,0,0"></TextBlock>
+                                    <Grid Margin="0,115,0,20">
+                                        <toolTip:AgeChart></toolTip:AgeChart>
+                                    </Grid>
+                                </Grid>
+                                <Grid Height="100"></Grid>
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

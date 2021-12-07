@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="HRApp.Popups.RecruitmentManagementPopups.PerformRecruitmentPopup.SetupTemplatePopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HRApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
+    <Grid Height="228" Width="736" Background="#ffffff">
+        <Grid Height="36" VerticalAlignment="Top" Background="#4C5BD4">
+            <TextBlock Text="THIẾT LẬP LÀM TIN MẪU" Foreground="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Roboto" FontStyle="Normal"></TextBlock>
+        </Grid>
+        <Grid Height="72" Width="636" VerticalAlignment="Center" Margin="36,59,64,97">
+            <TextBlock Text="Bạn có muốn thiết lập tin này thành" FontSize="14" Foreground="#474747" FontStyle="Normal"></TextBlock>
+            <TextBlock Text="tin mẫu" Margin="225,0,0,0"  FontWeight="DemiBold" FontSize="14" Foreground="#474747" FontStyle="Normal"></TextBlock>
+            <TextBlock Text=" tuyển dụng?" Margin="275,0,0,0" FontSize="14" Foreground="#474747" FontStyle="Normal"></TextBlock>
+            <TextBlock Text="Các tin tuyển dụng sau sẽ có cùng nội dung tuyển dụng (vị trí tuyển dụng,mức lương,mô tả công việc)" FontSize="14" Margin="0,20,0,0"  Foreground="#474747" FontStyle="Normal"></TextBlock>
+            <TextBlock Text="nếu bạn chọn mấu tin này?" FontSize="14" Margin="0,40,0,0"  Foreground="#474747" FontStyle="Normal"></TextBlock>
+        </Grid>
+        <Border Height="36" Width="100" CornerRadius="8"  Background="#BDBDBD" Margin="484,156,152,36">
+            <TextBlock Text="Hủy" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+        <Border Height="36" Width="100" CornerRadius="8" Background="#27AE60" Margin="600,156,36,36">
+            <TextBlock Text="Thiết lập" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+    </Grid>
+</UserControl>

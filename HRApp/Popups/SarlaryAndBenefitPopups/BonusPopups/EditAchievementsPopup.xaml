@@ -1,0 +1,124 @@
+﻿<UserControl x:Class="HRApp.Popups.SarlaryAndBenefitPopups.BonusPopups.EditAchievementsPopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="616" d:DesignWidth="736" Background="AliceBlue">
+    <Grid>
+        <Grid Height="36" VerticalAlignment="Top" Background="#4C5BD4">
+            <TextBlock Text="CHỈNH SỬA THÀNH TÍCH" Foreground="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Roboto" FontStyle="Normal" Margin="290,9,273,4" Width="173" Height="23"></TextBlock>
+        </Grid>
+        <Grid Height="36" Width="624" Margin="55,84,57,496">
+            <Grid Height="16" Width="94" HorizontalAlignment="Left" Margin="0,11,0,9">
+                <TextBlock Text="Số quyết định " FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="106" HorizontalAlignment="Left" Margin="0,1,-12,0"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="5,0,0,0" Width="5" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Grid Width="404" Height="36" HorizontalAlignment="Right" Grid.Column="1">
+                <Border Opacity="48"  CornerRadius="4" BorderBrush="{StaticResource #474747}" BorderThickness="1">
+                </Border>
+                <TextBox Text="120520/QĐ-KTNV" HorizontalAlignment="Center" Padding="20,0,0,0" BorderThickness="0" Foreground="{StaticResource #666666}" FontSize="14" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+
+            </Grid>
+        </Grid>
+
+
+        <Grid Height="36" Width="624" Margin="55,148,57,432">
+            <Grid Height="16" Width="190" HorizontalAlignment="Left" Margin="0,11,434,9">
+                <TextBlock Text="Nội dung khen thưởng" Foreground="#474747" FontSize="14" FontFamily="Roboto" Width="185" HorizontalAlignment="Left"></TextBlock>
+                <TextBlock Text="*" Foreground="red"  Width="5" HorizontalAlignment="Right" Margin="0,-1,44,1"></TextBlock>
+            </Grid>
+            <Grid Width="404" Height="36" HorizontalAlignment="Right">
+                <Border Opacity="48" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                    <TextBox Text="Khen thưởng cấp quản lý"  HorizontalAlignment="Center" Padding="20,0,0,0" BorderThickness="0" Foreground="{StaticResource #666666}" FontSize="14" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <Grid Height="36" Width="624" Margin="55,211,57,369">
+            <Grid Height="16" Width="64" HorizontalAlignment="Left" Margin="0,11,560,9">
+                <TextBlock Text="Người ký quyết định " FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="165" HorizontalAlignment="Left" Margin="0,0,-101,0"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="0,-2,-70,2" Width="5" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Grid Width="404" Height="36" HorizontalAlignment="Right">
+                <Border CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                    <TextBox Text="Chủ tịch HĐQT" HorizontalAlignment="Center" Padding="20,0,0,0" BorderThickness="0" Foreground="{StaticResource #666666}" FontSize="14" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"></TextBox>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <Grid Height="36" Width="624" Margin="55,275,57,305">
+            <Grid Height="16" Width="128" HorizontalAlignment="Left" Margin="0,11,496,9">
+                <TextBlock Text="Thời điểm " FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="128" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="0,-2,56,2" Width="5" HorizontalAlignment="Right"></TextBlock>
+
+            </Grid>
+            <Grid Width="404" Height="36" HorizontalAlignment="Right">
+                <Border Opacity="48" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                    <DatePicker Text="01/01/2021"  Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="{StaticResource #666666}" VerticalAlignment="Center"/>
+
+                </Border>
+            </Grid>
+        </Grid>
+
+
+        <Grid Height="36" Width="624" Margin="55,341,57,239">
+            <Grid Height="16" Width="128" HorizontalAlignment="Left" Margin="0,11,496,9">
+                <TextBlock Text="Hình thức khen thưởng  " FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="176" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Margin="0,3,-48,-14"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="0,1,-24,-1" Width="5" HorizontalAlignment="Right"></TextBlock>
+
+            </Grid>
+            <Grid Width="404" HorizontalAlignment="Right">
+                <Border CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                    <Path Cursor="Hand" Data="{StaticResource icon_explandmore}" Fill="{StaticResource #474747}" Opacity="0.24" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,20,0"></Path>
+
+
+
+
+                </Border>
+                <ComboBox Name="cbx1" Opacity="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,6,69,0" Width="325" Height="27">
+                    <ComboBoxItem IsSelected="True">--Vui lòng Chọn--</ComboBoxItem>
+
+
+
+                </ComboBox>
+            </Grid>
+        </Grid>
+
+
+        <Grid Height="36" Width="624" Margin="55,405,57,175">
+            <Grid Height="16" Width="128" HorizontalAlignment="Left" Margin="0,11,496,9">
+                <TextBlock Text="Danh hiệu " FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="128" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="0,-2,56,2" Width="5" HorizontalAlignment="Right"></TextBlock>
+
+            </Grid>
+            <Grid Width="404" Height="36" HorizontalAlignment="Right">
+                <Border Opacity="48" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                    <TextBox Text="Quản lý có phương hướng đột phá trong phát triển nhân viên" Padding="20,0,0,0" BorderThickness="0" Foreground="{StaticResource #666666}" FontSize="14" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Margin="-13.8,7.2,13.2,9.2"></TextBox>
+                </Border>
+            </Grid>
+        </Grid>
+
+
+        <Grid Height="36" Width="624" Margin="55,467,57,113">
+            <Grid Height="16" Width="128" HorizontalAlignment="Left" Margin="0,11,496,9">
+                <TextBlock Text="Cấp khen " FontSize="14" Foreground="#474747" FontFamily="Roboto" Width="128" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top"></TextBlock>
+                <TextBlock Text="*" Foreground="red" Margin="0,-2,56,2" Width="5" HorizontalAlignment="Right"></TextBlock>
+
+            </Grid>
+            <Grid Width="404" Height="36" HorizontalAlignment="Right">
+                <Border Opacity="48" CornerRadius="4" BorderBrush="#474747" BorderThickness="1">
+                    <TextBox Text="Công ty" HorizontalAlignment="Center" Padding="20,0,0,0" BorderThickness="0" Foreground="{StaticResource #666666}" FontSize="14" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Margin="-11.8,6.2,11.2,9.2"></TextBox>
+                </Border>
+            </Grid>
+        </Grid>
+
+
+        <Border Height="36" Width="100" CornerRadius="8"  Background="#BDBDBD" Margin="464,524,172,56">
+            <TextBlock Text="Hủy" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+        <Border Height="36" Width="100" CornerRadius="8" Background="#27AE60" Margin="581,524,55,56">
+            <TextBlock Text="Thêm" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#ffffff" FontFamily="Roboto" FontSize="14" FontStyle="Normal"></TextBlock>
+        </Border>
+    </Grid>
+</UserControl>

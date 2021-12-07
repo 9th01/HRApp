@@ -1,0 +1,1680 @@
+﻿<UserControl x:Class="HRApp.Popups.RecruitmentManagementPopups.ListOfCandidatesPopups.CandidateDetailPopups.EditContractPopup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="2990"
+    d:DesignWidth="736"
+    Background="{DynamicResource MaterialDesignPaper}"
+    FontFamily="{DynamicResource MaterialDesignFont}"
+    TextElement.FontSize="13"
+    TextElement.FontWeight="Regular"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    TextOptions.TextFormattingMode="Ideal"
+    TextOptions.TextRenderingMode="Auto"
+    mc:Ignorable="d">
+    <Grid Width="768" Margin="0,0,-32,-2665.8">
+        <Grid
+            Height="36"
+            VerticalAlignment="Top"
+            Background="#4C5BD4">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontFamily="Roboto"
+                FontSize="14"
+                FontStyle="Normal"
+                Foreground="#ffffff"
+                Text="Chỉnh sửa hồ sơ ứng viên phỏng vấn vòng 1" />
+        </Grid>
+        <ScrollViewer Margin="-16,-24,16,2691">
+            <StackPanel>
+                <Grid>
+                    <TextBlock
+                        Margin="52,87,-32.6,-67"
+                        VerticalAlignment="Top"
+                        FontSize="14"
+                        Foreground="{StaticResource #4C5BD4}"
+                        Text="Thông tin ứng viên " />
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,92,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Mã ứng viên" />
+                    <TextBlock
+                        Width="10"
+                        Margin="75,0,538,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text="UV001" />
+                    </Border>
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Tên ứng viên" />
+                    <TextBlock
+                        Width="10"
+                        Margin="75,0,538,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text="Đỗ Khánh Tú" />
+                    </Border>
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="E-mail" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,540,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Ngocanh123@gmail.com" />
+                    </Border>
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        Width="102"
+                        Margin="0,9,0,10"
+                        HorizontalAlignment="Left"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Số điện thoại" />
+                    <TextBlock
+                        Width="10"
+                        Margin="81,4,533,13"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" 0906746389" />
+                    </Border>
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Giới tính" />
+                    <TextBlock
+                        Width="10"
+                        Margin="50,5,564,12"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" * " />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <Path
+                            Margin="0,0,20,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Cursor="Hand"
+                            Data="{StaticResource icon_explandmore}"
+                            Fill="{StaticResource #474747}"
+                            Opacity="0.24" />
+
+                    </Border>
+                    <ComboBox
+                        Name="cbx1"
+                        Height="27"
+                        Margin="230,6,69,0"
+                        VerticalAlignment="Top"
+                        Opacity="0">
+                        <ComboBoxItem IsSelected="True">Nam</ComboBoxItem>
+                        <ComboBoxItem>Nữ</ComboBoxItem>
+
+
+
+
+                    </ComboBox>
+
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Ngày tháng năm sinh" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,345,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+
+                        <DatePicker Margin="5.2,2.2,9.2,-0.8" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                    </Border>
+                </Grid>
+
+
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Quê quán" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,490,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Quỳnh Phụ, Thái Bình" />
+                    </Border>
+                </Grid>
+
+
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Trình độ học vấn" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,415,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <Path
+                            Margin="0,0,20,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Cursor="Hand"
+                            Data="{StaticResource icon_explandmore}"
+                            Fill="{StaticResource #474747}"
+                            Opacity="0.24" />
+
+
+                    </Border>
+
+                    <ComboBox
+                        Name="cbx2"
+                        Height="27"
+                        Margin="230,6,69,0"
+                        VerticalAlignment="Top"
+                        Opacity="0">
+                        <ComboBoxItem IsSelected="True">Đại Học</ComboBoxItem>
+                        <ComboBoxItem>Ăn Bám</ComboBoxItem>
+
+
+                    </ComboBox>
+                </Grid>
+
+
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Trường học" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,478,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Trường Đại học Kinh tế Quốc Dân" />
+                    </Border>
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Kinh nghiệm làm việc" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,350,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Chưa có kinh nghiệm " />
+                    </Border>
+
+
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Tình trạng hôn nhân" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,360,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <Path
+                            Margin="0,0,20,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Cursor="Hand"
+                            Data="{StaticResource icon_explandmore}"
+                            Fill="{StaticResource #474747}"
+                            Opacity="0.24" />
+                    </Border>
+                    <ComboBox
+                        Name="cbx3"
+                        Height="27"
+                        Margin="230,6,69,0"
+                        VerticalAlignment="Top"
+                        Opacity="0">
+                        <ComboBoxItem IsSelected="True">Ế</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">Có À</ComboBoxItem>
+
+
+                    </ComboBox>
+
+                </Grid>
+                <Grid Height="33">
+                    <TextBlock
+                        Margin="58,20,-58.6,-20.6"
+                        VerticalAlignment="Top"
+                        FontSize="14"
+                        Foreground="{StaticResource #4C5BD4}"
+                        Text=" Thông tin tuyển dụng" />
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Địa chỉ" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,535,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Số 43 Trường Chinh, Thanh Xuân, Hà Nội" />
+                    </Border>
+                </Grid>
+
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Nguồn ứng viên" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,420,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Website " />
+                    </Border>
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Vị trí ứng tuyển" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,425,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Nhân viên kinh doanh" />
+                    </Border>
+                </Grid>
+
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        Margin="0,10,486,10"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Nhân viên tuyển dụng" />
+                    <TextBlock
+                        Width="10"
+                        Margin="0,0,338,0"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        Text=" *" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Text=" Nguyễn Thị Mai" />
+                    </Border>
+                </Grid>
+                <Grid>
+                    <TextBlock
+                        Margin="63,26,-63.6,-11.2"
+                        FontSize="14"
+                        Foreground="{StaticResource #4C5BD4}"
+                        Text="Quá trình tuyển dụng" />
+                </Grid>
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        Margin="0,10,565,10"
+                        VerticalAlignment="Center"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Giai đoạn" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <TextBox
+                            Height="27"
+                            Margin="8.2,8.2,3.2,-0.8"
+                            VerticalAlignment="Top"
+                            Opacity="0.5"
+                            Text=" Nhận hồ sơ" />
+
+                    </Border>
+                </Grid>
+
+                <Grid
+                    Width="624"
+                    Height="36"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        Margin="0,0,494,0"
+                        VerticalAlignment="Top"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Thời gian nhận hồ sơ" />
+                    <Border
+                        Width="404"
+                        HorizontalAlignment="Right"
+                        BorderBrush="#474747"
+                        BorderThickness="1"
+                        CornerRadius="4">
+                        <DatePicker
+                            Height="35"
+                            Margin="7.2,0.2,7.2,-0.8"
+                            Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                    </Border>
+                </Grid>
+
+
+                <Grid>
+
+                    <Grid
+                        Width="624"
+                        Height="36"
+                        Margin="61,81,0,-52.2"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top">
+                        <TextBlock
+                            Margin="0,10,489,10"
+                            VerticalAlignment="Center"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Người tham gia" />
+                        <Border
+                            Width="404"
+                            Height="36"
+                            HorizontalAlignment="Right"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <TextBox
+                                Height="27"
+                                Margin="8.2,8.2,3.2,-0.8"
+                                VerticalAlignment="Top"
+                                Opacity="0.5"
+                                Text="Nguyễn Thị Mai Anh" />
+                        </Border>
+                    </Grid>
+
+                    <Grid
+                        Width="624"
+                        Margin="61,138,0,-109.4"
+                        HorizontalAlignment="Left">
+                        <TextBlock
+                            Margin="0,10,489,10"
+                            VerticalAlignment="Center"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Ghi chú" />
+                        <Border
+                            Width="404"
+                            Height="36"
+                            HorizontalAlignment="Right"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <TextBox
+                                Height="27"
+                                Margin="8.2,8.2,3.2,-0.8"
+                                VerticalAlignment="Top"
+                                Opacity="0.5"
+                                Text="Đây là ghi chú" />
+                        </Border>
+                    </Grid>
+                </Grid>
+
+
+                <Grid
+                    Width="624"
+                    Height="186"
+                    Margin="0,28,0,0"
+                    HorizontalAlignment="Center">
+                    <TextBlock
+                        Margin="0,-64,531,233"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Đánh giá hồ sơ" />
+                    <Grid Margin="215,-71,229,228">
+                        <Path
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="35,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="70,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="105,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="140,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                    </Grid>
+
+
+
+                </Grid>
+                <Grid Width="747" Height="35">
+                    <Grid
+                        Width="404"
+                        Height="80"
+                        Margin="0,-214,124,251"
+                        HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="185*" />
+                            <ColumnDefinition Width="219*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </Grid>
+                <Grid>
+                    <Rectangle
+                        Margin="6,-106,-5.6,105.6"
+                        Opacity="0.5"
+                        RadiusX="10"
+                        RadiusY="10"
+                        Stroke="Black"
+                        StrokeDashArray="0.5 1.0 0.3"
+                        StrokeThickness="1" />
+                </Grid>
+
+                <Grid>
+                    <Grid
+                        Width="624"
+                        Margin="61,-81,0,109.6"
+                        HorizontalAlignment="Left">
+                        <TextBlock
+                            Width="135"
+                            Margin="0,10"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Giai đoạn: " />
+
+                        <Border
+                            Width="404"
+                            Height="36"
+                            HorizontalAlignment="Right"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <TextBox
+                                Height="27"
+                                Margin="8.2,8.2,3.2,-0.8"
+                                VerticalAlignment="Top"
+                                Opacity="0.5"
+                                Text="Giai đoạn phỏng vấn" />
+                        </Border>
+                    </Grid>
+
+                    <Grid
+                        Width="624"
+                        Margin="61,-25,0,53.6"
+                        HorizontalAlignment="Left">
+                        <TextBlock
+                            Width="135"
+                            Margin="0,10"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Thời gian phỏng vấn " />
+
+                        <Border
+                            Width="404"
+                            Height="36"
+                            HorizontalAlignment="Right"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <DatePicker
+                                Height="35"
+                                Margin="7.2,0.2,7.2,-0.8"
+                                Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+
+                        </Border>
+                    </Grid>
+                </Grid>
+
+                <Grid>
+                    <TextBlock
+                        Margin="60,-17,470.4,0"
+                        VerticalAlignment="Top"
+                        FontFamily="Roboto"
+                        FontSize="14"
+                        FontStyle="Normal"
+                        Foreground="#474747"
+                        Text="Đánh giá phỏng vấn " />
+
+                    <Grid Margin="284,-28,170.4,182.2">
+                        <Path
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="35,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="70,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="105,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+                        <Path
+                            Margin="140,0,0,0"
+                            Data="{StaticResource star_yellow}"
+                            Fill="{StaticResource #FDBE1E}"
+                            Stroke="#FDBE1E" />
+
+
+                        <Grid
+                            Height="36"
+                            Margin="-214,52,-103,-12"
+                            VerticalAlignment="Top">
+                            <TextBlock
+                                Margin="-7,10,496,9"
+                                VerticalAlignment="Center"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Người tham gia" />
+                            <Border
+                                Height="36"
+                                Margin="209,0,3,0"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <TextBox
+                                    Height="31"
+                                    Margin="6.2,4.2,11.2,-0.8"
+                                    VerticalAlignment="Top"
+                                    Opacity="0.5"
+                                    Text="Nguyễn Thị Mai Anh" />
+                            </Border>
+                        </Grid>
+
+                        <Grid
+                            Width="624"
+                            Margin="-223,101,-105,-72"
+                            HorizontalAlignment="Left">
+                            <TextBlock
+                                Margin="0,0,489,15.8"
+                                VerticalAlignment="Bottom"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Ghi chú" />
+                            <Border
+                                Height="36"
+                                Margin="220,7,0,4.8"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <TextBox
+                                    Height="30"
+                                    Margin="5.2,5.2,4.2,-0.8"
+                                    VerticalAlignment="Top"
+                                    Opacity="0.5"
+                                    Text="Đây là ghi chú" />
+                            </Border>
+                        </Grid>
+                    </Grid>
+
+                    <Grid>
+                        <Rectangle
+                            Margin="18,141,-17.6,89.2"
+                            Opacity="0.5"
+                            RadiusX="10"
+                            RadiusY="10"
+                            Stroke="Black"
+                            StrokeDashArray="0.5 1.0 0.3"
+                            StrokeThickness="1" />
+                    </Grid>
+
+
+                    <Grid
+                        Width="404"
+                        Height="30"
+                        Margin="283,32,63.4,123.6" />
+                    <Grid Width="404" Margin="283,79,63.4,113.2">
+                        <Grid
+                            Width="404"
+                            Height="30"
+                            Margin="-1,34,1,-34" />
+                    </Grid>
+
+                </Grid>
+                <Grid>
+                    <Grid
+                        Width="624"
+                        Margin="61,-89,0,214.2"
+                        HorizontalAlignment="Left">
+                        <TextBlock
+                            Width="148"
+                            Height="18"
+                            Margin="0,9,0,10"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Giai đoạn:" />
+
+                        <Border
+                            Height="36"
+                            Margin="220,25,0,25"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <TextBox
+                                Height="30"
+                                Margin="6.2,5.2,3.2,-0.8"
+                                VerticalAlignment="Top"
+                                Text="Giai đoạn nhận việc" />
+                        </Border>
+                    </Grid>
+
+                    <Grid
+                        Width="624"
+                        Margin="61,-31,0,60"
+                        HorizontalAlignment="Left">
+                        <TextBlock
+                            Height="18"
+                            Margin="-2,39,478,125.2"
+                            VerticalAlignment="Center"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Thời gian nhận việc" />
+
+                        <Border
+                            Height="36"
+                            Margin="220,29,0,117.2"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <DatePicker
+                                Height="35"
+                                Margin="7.2,0.2,7.2,-0.8"
+                                Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                        </Border>
+
+                        <TextBlock
+                            Margin="-1,98,498,66.2"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Đánh giá phỏng vấn " />
+
+                        <Grid Margin="226,89,217,64.2">
+                            <Path
+                                Data="{StaticResource star_yellow}"
+                                Fill="{StaticResource #FDBE1E}"
+                                Stroke="#FDBE1E" />
+                            <Path
+                                Margin="35,0,0,0"
+                                Data="{StaticResource star_yellow}"
+                                Fill="{StaticResource #FDBE1E}"
+                                Stroke="#FDBE1E" />
+                            <Path
+                                Margin="70,0,0,0"
+                                Data="{StaticResource star_yellow}"
+                                Fill="{StaticResource #FDBE1E}"
+                                Stroke="#FDBE1E" />
+                            <Path
+                                Margin="105,0,0,0"
+                                Data="{StaticResource star_yellow}"
+                                Fill="{StaticResource #FDBE1E}"
+                                Stroke="#FDBE1E" />
+                            <Path
+                                Margin="140,0,0,0"
+                                Data="{StaticResource star_yellow}"
+                                Fill="{StaticResource #FDBE1E}"
+                                Stroke="#FDBE1E" />
+                        </Grid>
+                        <Grid Margin="0,91,0,0.2">
+                            <TextBlock
+                                Width="148"
+                                Height="18"
+                                Margin="0,62,0,31.2"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Người tham gia" />
+
+                            <Border
+                                Height="36"
+                                Margin="220,52,0,23.2"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <TextBox
+                                    Height="28"
+                                    Margin="7.2,7.2,3.2,-0.8"
+                                    VerticalAlignment="Top"
+                                    Text="Nguyễn Thị Mai Anh" />
+                            </Border>
+                        </Grid>
+
+                        <TextBlock
+                            Margin="6,0,483,-38.8"
+                            VerticalAlignment="Bottom"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Ghi chú" />
+                        <Border
+                            Height="36"
+                            Margin="220,192,0,-45.8"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <TextBox
+                                Height="30"
+                                Margin="5.2,5.2,4.2,-0.8"
+                                VerticalAlignment="Top"
+                                Opacity="0.5"
+                                Text="Đây là ghi chú" />
+                        </Border>
+                    </Grid>
+                    <Grid>
+                        <Rectangle
+                            Margin="12,230,-11.6,0.2"
+                            Opacity="0.5"
+                            RadiusX="10"
+                            RadiusY="10"
+                            Stroke="Black"
+                            StrokeDashArray="0.5 1.0 0.3"
+                            StrokeThickness="1" />
+                    </Grid>
+
+                    <Grid
+                        Width="624"
+                        Margin="60,126,0,-97.4"
+                        HorizontalAlignment="Left">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+
+                    <Grid
+                        Width="624"
+                        Height="68"
+                        Margin="61,0,0,-77.8"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom">
+                        <TextBlock
+                            Width="148"
+                            Height="18"
+                            Margin="-5,25,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Giai đoạn chuyển " />
+
+
+                        <TextBlock
+                            Width="10"
+                            Margin="100,23,514,28"
+                            VerticalAlignment="Center"
+                            FontSize="14"
+                            Foreground="Red"
+                            Text=" *" />
+                        <Border
+                            Height="36"
+                            Margin="220,16,0,16"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+
+                            <TextBox
+                                Height="31"
+                                Margin="8.2,4.2,3.2,-0.8"
+                                VerticalAlignment="Top"
+                                Opacity="0.5"
+                                Text="Ký hợp đồng" />
+                        </Border>
+
+                    </Grid>
+
+
+                    <Grid
+                        Height="154"
+                        Margin="21,0,-0.6,-246.8"
+                        VerticalAlignment="Bottom">
+                        <TextBlock
+                            Width="184"
+                            Margin="24,12,0,124"
+                            HorizontalAlignment="Left"
+                            FontFamily="Roboto"
+                            FontSize="14"
+                            FontStyle="Normal"
+                            Foreground="#474747"
+                            Text="Thời gian chuyển giai đoạn " />
+                        <TextBlock
+                            Width="10"
+                            Margin="187,10,533,127"
+                            VerticalAlignment="Center"
+                            FontSize="14"
+                            Foreground="Red"
+                            Text=" *" />
+
+                        <Border
+                            Height="36"
+                            Margin="260,-8,89,126"
+                            BorderBrush="#474747"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                            <DatePicker
+                                Height="34"
+                                Margin="4.2,0.2,2,0.2"
+                                Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                        </Border>
+                    </Grid>
+                    <Grid Margin="-18,347,18.4,-346.8">
+                        <Grid
+                            Width="624"
+                            Height="188"
+                            Margin="64,49,62,-6"
+                            HorizontalAlignment="Center">
+                            <TextBlock
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Đánh giá giai đoạn ký hợp đồng " />
+                            <TextBlock
+                                Width="10"
+                                Margin="196,-3,418,0"
+                                VerticalAlignment="Top"
+                                FontSize="14"
+                                Foreground="Red"
+                                Text=" *" />
+                            <Grid
+                                Width="180"
+                                Height="30"
+                                Margin="214,0,230,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top">
+                                <Path
+                                    Data="{StaticResource star_yellow}"
+                                    Fill="{StaticResource #FDBE1E}"
+                                    Stroke="#FDBE1E" />
+                                <Path
+                                    Margin="35,0,0,0"
+                                    Data="{StaticResource star_yellow}"
+                                    Fill="{StaticResource #FDBE1E}"
+                                    Stroke="#FDBE1E" />
+                                <Path
+                                    Margin="70,0,0,0"
+                                    Data="{StaticResource star_yellow}"
+                                    Fill="{StaticResource #FDBE1E}"
+                                    Stroke="#FDBE1E" />
+                                <Path
+                                    Margin="105,0,0,0"
+                                    Data="{StaticResource star_yellow}"
+                                    Fill="{StaticResource #FDBE1E}"
+                                    Stroke="#FDBE1E" />
+                                <Path
+                                    Margin="140,0,0,0"
+                                    Data="{StaticResource star_yellow}"
+                                    Stroke="#FDBE1E" />
+                            </Grid>
+                            <StackPanel Margin="0,0,2,-49">
+                                <Grid
+                                    Width="404"
+                                    Height="30"
+                                    Margin="220,40,0,0">
+                                    <TextBlock
+                                        Height="16"
+                                        Margin="0,0,230,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        FontFamily="Roboto"
+                                        FontSize="14"
+                                        FontStyle="Normal"
+                                        Foreground="#474747"
+                                        Text="Kỹ năng giao tiếp" />
+                                    <Grid
+                                        Width="205"
+                                        Margin="0,0,0,0"
+                                        HorizontalAlignment="Right">
+                                        <Path Data="{StaticResource star_yellow}" Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="35,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="70,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="105,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="140,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="175,0,0,0"
+                                            Data="{StaticResource delete_icon}"
+                                            Fill="red" />
+                                    </Grid>
+                                </Grid>
+                                <Grid
+                                    Width="404"
+                                    Height="30"
+                                    Margin="220,10,0,0">
+                                    <TextBlock
+                                        Height="16"
+                                        Margin="0,7"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        FontFamily="Roboto"
+                                        FontSize="14"
+                                        FontStyle="Normal"
+                                        Foreground="#474747"
+                                        Text="Kỹ năng chuyên môn" />
+                                    <Grid
+                                        Width="205"
+                                        Margin="0,0,0,0"
+                                        HorizontalAlignment="Right">
+                                        <Path Data="{StaticResource star_yellow}" Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="35,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="70,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="105,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="140,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="175,0,0,0"
+                                            Data="{StaticResource delete_icon}"
+                                            Fill="red" />
+                                    </Grid>
+                                </Grid>
+                                <Grid
+                                    Width="404"
+                                    Height="30"
+                                    Margin="220,10,0,0">
+                                    <TextBlock
+                                        Height="16"
+                                        Margin="0,7"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        FontFamily="Roboto"
+                                        FontSize="14"
+                                        FontStyle="Normal"
+                                        Foreground="#474747"
+                                        Text="Ngoại ngữ" />
+                                    <Grid
+                                        Width="205"
+                                        Margin="0,0,0,0"
+                                        HorizontalAlignment="Right">
+                                        <Path Data="{StaticResource star_yellow}" Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="35,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="70,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="105,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="140,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="175,0,0,0"
+                                            Data="{StaticResource delete_icon}"
+                                            Fill="red" />
+                                    </Grid>
+                                </Grid>
+                                <Grid
+                                    Width="404"
+                                    Height="30"
+                                    Margin="220,10,0,0">
+                                    <TextBlock
+                                        Height="16"
+                                        Margin="0,7"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        FontFamily="Roboto"
+                                        FontSize="14"
+                                        FontStyle="Normal"
+                                        Foreground="#474747"
+                                        Text="Kỹ năng khác:Photoshop" />
+                                    <Grid
+                                        Width="205"
+                                        Margin="0,0,0,0"
+                                        HorizontalAlignment="Right">
+                                        <Path Data="{StaticResource star_yellow}" Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="35,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="70,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="105,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Margin="140,0,0,0"
+                                            Data="{StaticResource star_yellow}"
+                                            Stroke="#FDBE1E" />
+                                        <Path
+                                            Width="20"
+                                            Height="20"
+                                            Margin="175,0,0,0"
+                                            Data="{StaticResource delete_icon}"
+                                            Fill="red" />
+                                    </Grid>
+                                </Grid>
+
+
+                            </StackPanel>
+                            <TextBlock
+                                Height="20"
+                                Margin="218,204,146,-36"
+                                VerticalAlignment="Center"
+                                FontSize="14"
+                                Foreground="{StaticResource ResourceKey=#4C5BD4}"
+                                RenderTransformOrigin="0.51,1.53"
+                                Text="Thêm kỹ năng" />
+
+                        </Grid>
+
+
+                    </Grid>
+
+                    <!--  ....................  -->
+                    <Grid Margin="-13,541,12.4,-559.8">
+                        <Grid
+                            Width="624"
+                            Margin="61,15,0,13.6"
+                            HorizontalAlignment="Left">
+                            <TextBlock
+                                Width="148"
+                                Height="18"
+                                Margin="0,9,0,10"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Mức lương mong muốn  " />
+
+                            <Border
+                                Width="404"
+                                Height="36"
+                                HorizontalAlignment="Right"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <TextBox
+                                    Height="27"
+                                    Margin="8.2,8.2,3.2,-0.8"
+                                    VerticalAlignment="Top"
+                                    Text="7.500.000 VNĐ" />
+                            </Border>
+                        </Grid>
+
+                        <Grid
+                            Width="624"
+                            Margin="58,69,0,-40"
+                            HorizontalAlignment="Left">
+                            <TextBlock
+                                Width="148"
+                                Height="18"
+                                Margin="0,9,0,10"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Mức lương thực " />
+
+                            <Border
+                                Width="404"
+                                Height="36"
+                                HorizontalAlignment="Right"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <TextBox
+                                    Height="27"
+                                    Margin="8.2,8.2,3.2,-0.8"
+                                    VerticalAlignment="Top"
+                                    Text="7.000.000 VNĐ" />
+                            </Border>
+                        </Grid>
+
+                        <Grid
+                            Width="624"
+                            Margin="60,126,0,-97.4"
+                            HorizontalAlignment="Left">
+                            <TextBlock
+                                Width="162"
+                                Height="18"
+                                Margin="0,9,0,10"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Thời gian hẹn phỏng vấn  " />
+                            <TextBlock
+                                Width="10"
+                                Margin="150,6,464,14"
+                                VerticalAlignment="Center"
+                                FontSize="14"
+                                Foreground="Red"
+                                Text=" *" />
+
+                            <Border
+                                Height="36"
+                                Margin="221,0,211,1"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <materialDesign:TimePicker
+                                    Margin="3.2,0.2"
+                                    materialDesign:HintAssist.Hint="Custom hint"
+                                    Style="{StaticResource MaterialDesignFloatingHintTimePicker}" />
+                            </Border>
+
+                            <Border
+                                Height="36"
+                                Margin="432,2,0,-1"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <DatePicker
+                                    Margin="2.2,0.2"
+                                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
+                                    Text="28/08/2021" />
+                            </Border>
+                        </Grid>
+
+                        <Grid
+                            Width="624"
+                            Margin="61,184,0,-155.4"
+                            HorizontalAlignment="Left">
+                            <TextBlock
+                                Width="148"
+                                Height="18"
+                                Margin="0,9,0,10"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily="Roboto"
+                                FontSize="14"
+                                FontStyle="Normal"
+                                Foreground="#474747"
+                                Text="Nhân viên tham gia  " />
+                            <TextBlock
+                                Width="10"
+                                Margin="117,8,497,12"
+                                VerticalAlignment="Center"
+                                FontSize="14"
+                                Foreground="Red"
+                                Text=" *" />
+
+                            <Border
+                                Width="404"
+                                Height="36"
+                                HorizontalAlignment="Right"
+                                BorderBrush="#474747"
+                                BorderThickness="1"
+                                CornerRadius="4">
+
+                                <TextBox
+                                    Height="27"
+                                    Margin="8.2,8.2,3.2,-0.8"
+                                    VerticalAlignment="Top"
+                                    Text="Nguyễn Thị Hiền" />
+                            </Border>
+                            <Path
+                                Margin="0,0,20,0"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Cursor="Hand"
+                                Data="{StaticResource icon_explandmore}"
+                                Fill="{StaticResource #474747}"
+                                Opacity="0.24" />
+
+                        </Grid>
+
+
+
+                        <Grid Margin="28,192,-28.6,-192">
+                            <Grid
+                                Width="404"
+                                Height="80"
+                                Margin="0,26,95.4,2"
+                                HorizontalAlignment="Right">
+
+                                <TextBlock
+                                    Margin="-218,0,356,7"
+                                    VerticalAlignment="Bottom"
+                                    FontFamily="Roboto"
+                                    FontSize="14"
+                                    FontStyle="Normal"
+                                    Foreground="#474747"
+                                    Text="Ghi chú" />
+
+                                <Border
+                                    Margin="-2,53,2,-53"
+                                    BorderBrush="#474747"
+                                    BorderThickness="1"
+                                    CornerRadius="4">
+                                    <ScrollViewer Margin="-4.8,2.2,0.2,-129.8">
+                                        <Grid Height="1200">
+                                            <TextBlock Margin="6,4,-0.4,0" Text="Đây là ghi chú Đây là ghi chú  Đây là ghi chú Đây là ghi chú  Đây là ghi chú Đây là ghi chú  Đây là ghi chú Đây là ghi chú  Đây là ghi chú Đây là ghi chú Đây là ghi chú Đây là ghi chú " />
+
+                                        </Grid>
+                                    </ScrollViewer>
+                                </Border>
+                            </Grid>
+                        </Grid>
+
+
+                    </Grid>
+
+                    <!--  ............................  -->
+
+                </Grid>
+                <Grid>
+                    <Border
+                        Width="100"
+                        Height="36"
+                        Margin="587,827,63.4,-770.2"
+                        Background="#27AE60"
+                        CornerRadius="8">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="14"
+                            Foreground="#ffffff"
+                            Text="Cập Nhật" />
+                    </Border>
+                    <Border
+                        Width="100"
+                        Height="36"
+                        Margin="449,827,201.4,-770.2"
+                        Background="{StaticResource #BDBDBD}"
+                        CornerRadius="8">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="14"
+                            Foreground="#ffffff"
+                            Text="Đóng" />
+                    </Border>
+                </Grid>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

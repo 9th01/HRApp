@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRApp", "HRApp\HRApp.csproj", "{B2323DA6-0785-4559-9D68-99F4BC214224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2323DA6-0785-4559-9D68-99F4BC214224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2323DA6-0785-4559-9D68-99F4BC214224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2323DA6-0785-4559-9D68-99F4BC214224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2323DA6-0785-4559-9D68-99F4BC214224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9B6FB96-4021-4FE4-973E-A4DC9692ECC3}
+	EndGlobalSection
+EndGlobal

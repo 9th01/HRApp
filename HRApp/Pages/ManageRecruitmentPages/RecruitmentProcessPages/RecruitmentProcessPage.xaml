@@ -1,0 +1,241 @@
+﻿<Page x:Class="HRApp.Pages.ManageRecruitmentPages.RecruitmentProcessPages.RecruitmentProcessPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HRApp.Pages.ManageRecruitmentPages.RecruitmentProcessPages"
+      mc:Ignorable="d" 
+      x:Name="page"
+      SizeChanged="page_SizeChanged"
+      d:DesignHeight="614" d:DesignWidth="988"
+      Title="ProfilePage">
+    
+    <Grid Margin="0,0,0,0">
+        <Grid VerticalAlignment="Top" Margin="0,57,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Cursor="Hand">
+                <Ellipse Width="15" Height="15" Fill="#4C5BD4" HorizontalAlignment="Center" VerticalAlignment="Center"></Ellipse>
+                <Path Data="{StaticResource icon_plus}" Fill="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Center"></Path>
+            </Grid>
+            <Grid Grid.Column="1" Margin="9,0,0,0" HorizontalAlignment="Left">
+                <TextBlock Cursor="Hand" Text="Thêm quy trình tuyển dụng" FontSize="14" Foreground="#4C5BD4"></TextBlock>
+            </Grid>
+        </Grid>
+        <Grid Width="400" Height="36" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,48,0,0" >
+            <Border CornerRadius="18" BorderBrush="#474747" BorderThickness="0.5" Background="#FFFFFF">
+            </Border>
+            <TextBox BorderThickness="0" FontSize="16" Padding="9,0,0,0" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" ></TextBox>
+            <Path Data="{StaticResource icon_search}" Fill="#666666" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,14,0" ></Path>
+        </Grid>
+
+        <Grid VerticalAlignment="Top" Margin="1,108,1,0">
+            <Border CornerRadius="4" BorderBrush="{StaticResource #474747}" BorderThickness="0.5" Opacity="0.24"></Border>
+            <StackPanel Orientation="Vertical" Margin="1,0,1,0">
+                <Grid Height="126">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Width="4" Height="56" Background="#4C5BD4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,27,0,0"></Grid>
+                    <Grid Grid.Column="0" >
+                        <TextBlock Cursor="Hand" Text="(QTTD001) Quy trình tuyển dụng nhân viên nhân sự" FontSize="14" Foreground="#474747" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,30,0,0" MouseLeftButtonDown="navigateToDetail"></TextBlock>
+                        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,64,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" Width="124" Margin="0,0,32,0">
+                                <Border CornerRadius="8" Background="#F1F9FC"></Border>
+                                <TextBlock Text="15:35 - 10/06/2021" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="#666666"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Column="1" Margin="0,0,9.6,0">
+                                <TextBlock Text="Tạo bởi Phạm Văn Minh" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="#666666"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Column="2" Margin="0,0,14,0">
+                                <Ellipse Width="4" Height="4" Fill="#666666" VerticalAlignment="Center" HorizontalAlignment="Center"></Ellipse>
+                            </Grid>
+                            <Grid Grid.Column="3">
+                                <TextBlock Text="Đối tượng áp dụng: Nhân viên nhân sự" FontSize="12" Foreground="#666666" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Column="1" Margin="0,5,20,5">
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="Grid">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="true">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="false">
+                                            <Setter Property="Visibility" Value="Collapsed"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Path Cursor="Hand" Data="{StaticResource icon_view_detail}" Fill="#4C5BD4" VerticalAlignment="Center"></Path>
+                                <TextBlock Cursor="Hand" FontWeight="SemiBold" Text="Xem chi tiết" FontSize="14" Foreground="#4C5BD4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="28,-1,0,0"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Path Cursor="Hand" Data="{StaticResource icon_edit}" Fill="#4C5BD4" VerticalAlignment="Center" Stroke="#4C5BD4"></Path>
+                                <TextBlock Cursor="Hand" FontWeight="SemiBold" Text="Chỉnh sửa" FontSize="14" Foreground="#4C5BD4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="28,-1,0,0"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Path Cursor="Hand" Data="{StaticResource icon_garbage_can}" Fill="#EB5757" VerticalAlignment="Center"></Path>
+                                <TextBlock Cursor="Hand" FontWeight="SemiBold" Text="Xóa" FontSize="14" Foreground="#EB5757" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="28,-1,0,0"></TextBlock>
+                            </Grid>
+                        </Grid>
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="Grid">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="true">
+                                            <Setter Property="Visibility" Value="Collapsed"></Setter>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="false">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Path Grid.Column="0" Cursor="Hand" Data="{StaticResource icon_view_detail}" Fill="#4C5BD4" VerticalAlignment="Center"></Path>
+                            <Path Grid.Column="1" Margin="20,0,20,0" Cursor="Hand" Data="{StaticResource icon_edit}" Fill="#4C5BD4" VerticalAlignment="Center" Stroke="#4C5BD4"></Path>
+                            <Path Grid.Column="2" Cursor="Hand" Data="{StaticResource icon_garbage_can}" Fill="#EB5757" VerticalAlignment="Center"></Path>
+                        </Grid>
+                    </Grid>
+
+                    <Separator Grid.ColumnSpan="2" Height="0.5" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#474747" />
+
+                </Grid>
+
+                <Grid Height="126">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Width="4" Height="56" Background="#4C5BD4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,27,0,0"></Grid>
+                    <Grid Grid.Column="0" >
+                        <TextBlock Cursor="Hand" Text="(QTTD001) Quy trình tuyển dụng nhân viên nhân sự" FontSize="14" Foreground="#474747" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,30,0,0"></TextBlock>
+                        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,64,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" Width="124" Margin="0,0,32,0">
+                                <Border CornerRadius="8" Background="#F1F9FC"></Border>
+                                <TextBlock Text="15:35 - 10/06/2021" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="#666666"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Column="1" Margin="0,0,9.6,0">
+                                <TextBlock Text="Tạo bởi Phạm Văn Minh" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="#666666"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Column="2" Margin="0,0,14,0">
+                                <Ellipse Width="4" Height="4" Fill="#666666" VerticalAlignment="Center" HorizontalAlignment="Center"></Ellipse>
+                            </Grid>
+                            <Grid Grid.Column="3">
+                                <TextBlock Text="Đối tượng áp dụng: Nhân viên nhân sự" FontSize="12" Foreground="#666666" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Column="1" Margin="0,5,20,5">
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="Grid">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="true">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="false">
+                                            <Setter Property="Visibility" Value="Collapsed"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Path Cursor="Hand" Data="{StaticResource icon_view_detail}" Fill="#4C5BD4" VerticalAlignment="Center"></Path>
+                                <TextBlock Cursor="Hand" FontWeight="SemiBold" Text="Xem chi tiết" FontSize="14" Foreground="#4C5BD4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="28,-1,0,0"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Path Cursor="Hand" Data="{StaticResource icon_edit}" Fill="#4C5BD4" VerticalAlignment="Center" Stroke="#4C5BD4"></Path>
+                                <TextBlock Cursor="Hand" FontWeight="SemiBold" Text="Chỉnh sửa" FontSize="14" Foreground="#4C5BD4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="28,-1,0,0"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Path Cursor="Hand" Data="{StaticResource icon_garbage_can}" Fill="#EB5757" VerticalAlignment="Center"></Path>
+                                <TextBlock Cursor="Hand" FontWeight="SemiBold" Text="Xóa" FontSize="14" Foreground="#EB5757" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="28,-1,0,0"></TextBlock>
+                            </Grid>
+                        </Grid>
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="Grid">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="true">
+                                            <Setter Property="Visibility" Value="Collapsed"></Setter>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=Show}" Value="false">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Path Grid.Column="0" Cursor="Hand" Data="{StaticResource icon_view_detail}" Fill="#4C5BD4" VerticalAlignment="Center"></Path>
+                            <Path Grid.Column="1" Margin="20,0,20,0" Cursor="Hand" Data="{StaticResource icon_edit}" Fill="#4C5BD4" VerticalAlignment="Center" Stroke="#4C5BD4"></Path>
+                            <Path Grid.Column="2" Cursor="Hand" Data="{StaticResource icon_garbage_can}" Fill="#EB5757" VerticalAlignment="Center"></Path>
+                        </Grid>
+                    </Grid>
+                    <Separator Grid.ColumnSpan="2" Height="0.5" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#474747" />
+
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+        <Grid VerticalAlignment="Bottom" Margin="0,0,0,50" HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Cursor="Hand" Grid.Column="0" Height="24" Width="20">
+                <Border CornerRadius="4" BorderBrush="#4C5BD4" BorderThickness="0.5"></Border>
+                <TextBlock Text="&lt;" Foreground="#4C5BD4" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,1,3"></TextBlock>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="21,0,24,0">
+                <TextBlock Text="Trang 1" FontSize="14" Foreground="#474747" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+
+            <Grid Cursor="Hand" Grid.Column="2" Height="24" Width="20">
+                <Border CornerRadius="4" BorderBrush="#4C5BD4" BorderThickness="0.5"></Border>
+                <TextBlock Text="&gt;" Foreground="#4C5BD4" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,1,3"></TextBlock>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

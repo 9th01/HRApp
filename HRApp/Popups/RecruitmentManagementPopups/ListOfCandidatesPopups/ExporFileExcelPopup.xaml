@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="HRApp.Popups.RecruitmentManagementPopups.ListOfCandidatesPopups.ExporFileExcelPopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Width="736" Height="300" Background="#ffffff">
+        <Grid Height="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0">
+            <TextBlock Text="Bạn chưa xuất được file Excel" FontSize="14" Foreground="#474747" FontWeight="Bold"></TextBlock>
+        </Grid>
+        <Grid Width="736" Height="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,64,0,0">
+            <Grid>
+                <TextBlock Text="Xin vui lòng chọn" Margin="148,0,0,0" FontSize="14" Foreground="#474747"></TextBlock>
+            </Grid>
+            <Grid>
+                <TextBlock Text="Giai Đoạn" FontSize="14" Foreground="#474747" HorizontalAlignment="Left" Margin="260,0,0,0" FontWeight="DemiBold"></TextBlock>
+            </Grid>
+            <Grid>
+                <TextBlock Text="để xuất được file Excel danh sách ứng viên!" HorizontalAlignment="Right" Margin="0,0,147,0" FontSize="14" Foreground="#474747"></TextBlock>
+            </Grid>
+        </Grid>
+        <Grid Width="482" Height="36" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,108,0,0">
+            <TextBlock Text="Giai Đoạn:" FontSize="14" Foreground="#474747" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <Border CornerRadius="4" BorderThickness="1" BorderBrush="#999999" Width="404" HorizontalAlignment="Right">
+                <TextBlock Text="-- Vui lòng chọn --" Foreground="#999999" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0"></TextBlock>
+            </Border>
+            <Grid Width="15" Height="12" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,9,0">
+                <Path  Data="{StaticResource dropdown}"  Fill="#999999" Stretch="Uniform" >
+                </Path>
+            </Grid>
+        </Grid>
+        <Border CornerRadius="8" Margin="0,0,192,36" Background="#BDBDBD" Width="120" Height="36" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <TextBlock Text="Hủy" FontSize="14" Foreground="#ffffff" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Border>
+        <Border CornerRadius="8" Margin="0,0,56,36" Background="#20744A" Width="120" Height="36" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <TextBlock Text="Xuất file Excel" FontSize="14" Foreground="#ffffff" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Border>
+    </Grid>
+</UserControl>
